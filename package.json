@@ -1,0 +1,30 @@
+{
+  "name": "my-ai-certification-coach",
+  "version": "0.1.0",
+  "description": "Local AI coach to prepare for technical certifications (voice + text, OpenAI only)",
+  "license": "MIT",
+  "author": "careerpmo-max",
+  "homepage": "https://github.com/careerpmo-max/My-AI-Certification-Coach#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/careerpmo-max/My-AI-Certification-Coach.git"
+  },
+  "bugs": {
+    "url": "https://github.com/careerpmo-max/My-AI-Certification-Coach/issues"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server/index.js",
+    "test": "node --test \"test/*.test.js\"",
+    "check": "node scripts/check.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "shortcut": "node scripts/shortcut.mjs",
+    "postinstall": "node scripts/shortcut.mjs --auto",
+    "icons": "node scripts/make-icon.mjs",
+    "ci": "npm run check && npm test"
+  }
+}

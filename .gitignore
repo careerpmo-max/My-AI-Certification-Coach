@@ -1,0 +1,30 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Local user data (API key, profile, curricula, sessions, progress)
+data/
+
+# Dependencies and builds
+node_modules/
+dist/
+build/
+.next/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Generated desktop launchers (created by `npm run shortcut`)
+launch.bat
+launch.command
+launch.sh
+
+# IDE, OS and tooling
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+.claude/
